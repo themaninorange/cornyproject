@@ -31,7 +31,7 @@ vsumweek_adj = sumbymod(weightedquality(x)*v,5)
 
 
 
-#################
+##################
 
 x_adj = USnationalcornconditionbyweek$Data.Item
 v_adj = USnationalcornconditionbyweek$Value
