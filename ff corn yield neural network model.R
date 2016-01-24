@@ -23,14 +23,14 @@ tdwtnormedfinalarray=t(dwtnormedfinalarray) #81 by 165 to 165 by 81
 
 
 #the dependent vector
- dataset1=cbind(tdwtnormedfinalarray, dependentvar)   #last column is dependent var
+ dataset1=cbind(tdwtnormedfinalarray, dependentvar = dependentvar[1:dim(tdwtnormedfinalarray)[1]])   #last column is dependent var
 #divide into training and testing sets
 train=sample(nrow(dataset1),round(nrow(dataset1)*.7,0))
 
 
-model=nnet(dependentvar~.,data=dataset1[train,],size=c(20), linout=TRUE)
-predSpecies=predict(model,newdata=dataset1[-train,])  #regression, not classification
-confmatrix(dependentvar[-train],predSpecies)   #this finds the predicted accuracy on the new data that the network was not trained on.
-plot(model)
+model=nnet(dependentvar~.,data=dataset1[train,],size=20, linout=TRUE, MaxNWts = 10000)
+predcondition=predict(model,newdata=dataset1[-train,])  #regression, not classification
+confmatrix(dependentvar[1:dim(tdwtnormedfinalarray)[1]][-train],predcondition)   #this finds the predicted accuracy on the new data that the network was not trained on.
+plot.nnet(model)
 
 

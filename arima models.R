@@ -38,10 +38,6 @@ tsdisplay(res)
 Box.test(res, lag=16, fitdf=4, type="Ljung")
 bic[2] = fitarima[[2]]$bic
 
-#arumasubsets
-fitarmasubset = armasubsets(vsumweek_adj,nar = 5,nma = 5)
-plot(fitarmasubse)
-
 #Fit 16 arima models (one for each year).  Compare BIC.
 fitarima_year = list()
 qfitarima_year = list()
