@@ -11,7 +11,7 @@ Predictions with Actual Trend | ~
 
 For the five different field condition categories of the data set - Very Poor, Poor, Fair, Good, and Excellent - there are four different plots in this folder.
 
-# ARIMA
+### ARIMA
 
 One of the models we worked with was the ARIMA model.  This is regression on the previous values, as well as the errors from the previous predictions as the predictive variables.  We didn't find this one to be particularly interesting.
 
@@ -21,7 +21,7 @@ ARIMA Predictions | ~ | ~ | ~ | ~
 :---:|:---:|:---:|:---:|:---:
 ![Very Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/verypoor.png "Very Poor ARIMA") | ![Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/poor.png "Poor ARIMA") |![Fair](https://github.com/themaninorange/cornyproject/blob/master/Plots/fair.png "Fair ARIMA") | ![Good](https://github.com/themaninorange/cornyproject/blob/master/Plots/good.png "Good ARIMA") | ![Excellent](https://github.com/themaninorange/cornyproject/blob/master/Plots/excellent.png "Excellent ARIMA")
 
-# Support Vector Machines, 1 Lag
+### Support Vector Machines, 1 Lag
 
 By shifting all of the observations down in relation to the position we are trying to predict, we can create a data set to make predictions on.  After training on the first part of the data set, we can see how the model performs on the rest.
 
@@ -31,7 +31,7 @@ SVM 1 Lag Predictions | ~ | ~ | ~ | ~
 :---:|:---:|:---:|:---:|:---:
 ![Very Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/verypoorlag1.png "Very Poor ARIMA") | ![Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/poorlag1.png "Poor ARIMA") |![Fair](https://github.com/themaninorange/cornyproject/blob/master/Plots/fairlag1.png "Fair ARIMA") | ![Good](https://github.com/themaninorange/cornyproject/blob/master/Plots/goodlag1.png "Good ARIMA") | ![Excellent](https://github.com/themaninorange/cornyproject/blob/master/Plots/excellentlag1.png "Excellent ARIMA")
 
-# Support Vector Machines, 2 Lags
+### Support Vector Machines, 2 Lags
 
 [rating]lag2.png is like [rating]lag1.png.  It is also only a one-week-ahead forecast, however the models involved took into account the previous week along with the two weeks before that in order to make the predictions.
 
@@ -39,7 +39,7 @@ SVM 2 Lag Predictions | ~ | ~ | ~ | ~
 :---:|:---:|:---:|:---:|:---:
 ![Very Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/verypoorlag2.png "Very Poor ARIMA") | ![Poor](https://github.com/themaninorange/cornyproject/blob/master/Plots/poorlag2.png "Poor ARIMA") |![Fair](https://github.com/themaninorange/cornyproject/blob/master/Plots/fairlag2.png "Fair ARIMA") | ![Good](https://github.com/themaninorange/cornyproject/blob/master/Plots/goodlag2.png "Good ARIMA") | ![Excellent](https://github.com/themaninorange/cornyproject/blob/master/Plots/excellentlag2.png "Excellent ARIMA")
 
-# Support Vector Machines, 1 Lag, Year 15
+### Support Vector Machines, 1 Lag, Year 15
 
 [rating]year15.png is a plot similar to [rating]lag1 and [rating]2.png, however these resulted when one year was used as a test set, while the 14 other years were used to build the models.  These models used the week prior and the week prior to that for each of the predictions.
 
