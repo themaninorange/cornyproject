@@ -1,7 +1,7 @@
-Predicting Crop Yields with Mutlivariate Autocorrelation
+Predicting Crop Yields with Multivariate Autocorrelation
 ==========
 
-Our goal is to use Multivariate Autocorrelation to make forcasts of field conditions.  The data comes from USDA databases on corn yields.  For each week in the season, farmers will report the conditions of their field with one of five categories.  We want to estimate the proportions of fields rated with each of those five categories.
+Our goal is to use Multivariate Autocorrelation to make forecasts of field conditions.  The data comes from USDA databases on corn yields.  For each week in the season, farmers will report the conditions of their field with one of five categories.  We want to estimate the proportions of fields rated with each of those five categories.
 
 Predictions with Actual Trend | ~
 :-------------------------:|:-------------------------:
@@ -9,11 +9,11 @@ Predictions with Actual Trend | ~
 
 ## ARIMA
 
-One of the models we worked with was the ARIMA model.  This is regression on the previous values, as well as the errors from the previous predictions as the predictive variables.  We didn't find this one to be particularly interestin.
+One of the models we worked with was the ARIMA model.  This is regression on the previous values, as well as the errors from the previous predictions as the predictive variables.  We didn't find this one to be particularly interesting.
 
 ## Support Vector Machines and Neural Networks
 
-By shifting all of the observations down in relation to the position we are trying to predict, we can create a data set to make predicitions on.  After training on the first part of the data set, we can see how the model performs on the rest.
+By shifting all of the observations down in relation to the position we are trying to predict, we can create a data set to make predictions on.  After training on the first part of the data set, we can see how the model performs on the rest.
 
 ## Plots
 
